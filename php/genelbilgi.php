@@ -13,16 +13,16 @@ $sorgu4 = $baglanti->query("SELECT COUNT(ID) FROM `urunler`");
 
 
 	$mesaj = $sorgu->fetch_assoc();
-	echo $mesaj['COUNT(ID)'];
+	echo "<b>Firmalar:</b> " . $mesaj['COUNT(ID)'] . "<br>";
 	
 	$mesaj2 = $sorgu2->fetch_assoc();
-	echo $mesaj2['COUNT(ID)'];
+	echo "<b>Kullanıcılar:</b> " . $mesaj2['COUNT(ID)'] . "<br>";
 
 	$mesaj3 = $sorgu3->fetch_assoc();
-	echo $mesaj3['COUNT(ID)'];
+	echo "<b>Teklifler:</b> " . $mesaj3['COUNT(ID)'] . "<br>";
 
 	$mesaj4 = $sorgu4->fetch_assoc();
-	echo $mesaj4['COUNT(ID)'];
+	echo "<b>Ürünler:</b> " . $mesaj4['COUNT(ID)'];
 
 
 
