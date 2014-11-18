@@ -23,4 +23,3 @@ if($baglanti->connect_errno)
 
 $baglanti->close();
 ?>
-
