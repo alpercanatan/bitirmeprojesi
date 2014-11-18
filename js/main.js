@@ -36,6 +36,10 @@ $(function() {
 		}
 		$.get("php/" + menu[sayfa_adi].sayfa, function(data) {
 			$("#main").html(data);
+            $('input#Tarih').datepicker({
+                format: "yyyy-mm-dd",
+                language: "tr"
+            });
 		});
 		$(".breadcrumb").html("");
 		$.each(menu[sayfa_adi].nav, function(index, item) {
@@ -49,11 +53,6 @@ $(function() {
 	});
 
 	$(".list-group-item:first-child").click();
-});
-
-$('input#Tarih').datepicker({
-    format: "yyyy-mm-dd",
-    language: "tr"
 });
 
 
