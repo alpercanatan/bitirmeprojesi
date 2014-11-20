@@ -38,7 +38,9 @@ $(function() {
 			$("#main").html(data);
             $('input#Tarih').datepicker({
                 format: "yyyy-mm-dd",
-                language: "tr"
+                todayBtn: "linked",
+                language: "tr",
+                autoclose: true
             });
 		});
 		$(".breadcrumb").html("");
